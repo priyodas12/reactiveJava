@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 public class MonoSubscriberOnError {
     public static void main(String[] args) {
-        userRepository(25)
+        userRepository(5)
                 .subscribe(
                         SubscriberUtility.onNext(),
                         SubscriberUtility.onError(),
