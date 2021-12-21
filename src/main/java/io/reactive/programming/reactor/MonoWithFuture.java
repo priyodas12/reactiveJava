@@ -6,7 +6,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.concurrent.CompletableFuture;
 
-public class MonoFromFuture {
+public class MonoWithFuture {
     public static void main(String[] args) {
         Mono.fromFuture(getName())
         .subscribe(
