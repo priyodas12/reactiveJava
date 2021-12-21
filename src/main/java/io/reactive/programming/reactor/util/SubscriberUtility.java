@@ -26,4 +26,13 @@ public class SubscriberUtility {
     public static Faker faker(){
         return FAKER;
     }
+
+    public static void sleepSomeTime(int second){
+        System.out.println(Thread.currentThread().getName());
+        try {
+            Thread.sleep(second*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
