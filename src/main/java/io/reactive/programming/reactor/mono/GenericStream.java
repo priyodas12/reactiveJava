@@ -1,4 +1,4 @@
-package io.reactive.programming.reactor;
+package io.reactive.programming.reactor.mono;
 
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
