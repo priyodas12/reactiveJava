@@ -1,6 +1,6 @@
-package io.reactive.programming.reactor;
+package io.reactive.programming.reactor.mono;
 
-import io.reactive.programming.reactor.util.SubscriberUtility;
+import io.reactive.programming.reactor.mono.util.SubscriberUtility;
 import reactor.core.publisher.Mono;
 
 public class MonoWithRunnable {

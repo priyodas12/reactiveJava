@@ -1,4 +1,4 @@
-package io.reactive.programming.reactor;
+package io.reactive.programming.reactor.mono;
 
 import com.github.javafaker.Faker;
 import reactor.core.publisher.Mono;

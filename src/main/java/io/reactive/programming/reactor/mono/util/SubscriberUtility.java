@@ -1,4 +1,4 @@
-package io.reactive.programming.reactor.util;
+package io.reactive.programming.reactor.mono.util;
 
 import com.github.javafaker.Faker;
 
@@ -30,7 +30,7 @@ public class SubscriberUtility {
     public static void sleepSomeTime(int second){
         System.out.println(Thread.currentThread().getName());
         try {
-            Thread.sleep(second*1000);
+            Thread.sleep(second* 1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

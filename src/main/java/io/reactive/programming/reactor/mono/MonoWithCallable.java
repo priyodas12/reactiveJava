@@ -1,7 +1,7 @@
-package io.reactive.programming.reactor;
+package io.reactive.programming.reactor.mono;
 
 import com.github.javafaker.Faker;
-import io.reactive.programming.reactor.util.SubscriberUtility;
+import io.reactive.programming.reactor.mono.util.SubscriberUtility;
 import reactor.core.publisher.Mono;
 
 import java.util.Date;

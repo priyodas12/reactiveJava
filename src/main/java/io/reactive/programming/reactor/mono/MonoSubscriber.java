@@ -1,4 +1,4 @@
-package io.reactive.programming.reactor;
+package io.reactive.programming.reactor.mono;
 
 import reactor.core.publisher.Mono;
 
