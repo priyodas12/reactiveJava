@@ -5,8 +5,12 @@ import reactor.core.publisher.Flux;
 
 public class FluxIntro {
     public static void main(String[] args) {
-        Flux<Integer> flux=Flux.just(1);
-
-        flux.subscribe(FluxSubscriber.onNext());
+        Flux<Integer> intFlux=Flux.just(1,2,3,4,5,36);
+        Flux<Object> objFlux=Flux.just(true,6,2.8,"a", new int[]{1, 2, 3});
+        objFlux.subscribe(
+                FluxSubscriber.onNext(),
+                FluxSubscriber.onError(),
+                FluxSubscriber.onComplete()
+        );
     }
 }
