@@ -24,5 +24,14 @@ public class FluxSubscriber {
     public static Faker faker(){
         return FAKER;
     }
+
+    public static void sleep(int second){
+        System.out.println(Thread.currentThread().getName());
+        try {
+            Thread.sleep(second* 1000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
