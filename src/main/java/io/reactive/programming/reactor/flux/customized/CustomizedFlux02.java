@@ -6,6 +6,7 @@ import reactor.core.publisher.FluxSink;
 import reactor.util.context.Context;
 
 import java.util.function.LongConsumer;
+import java.util.stream.IntStream;
 
 public class CustomizedFlux02 {
     public static void main(String[] args) {
@@ -65,11 +66,23 @@ public class CustomizedFlux02 {
             }
         };
 
+        //producer
         NameProducer nameProducer=new NameProducer(fluxSink);
 
-        Flux.create(nameProducer)
-                .subscribe(new DefaultSubscriber("GOT-01-Characters, "));
+        //subscriber
+        DefaultSubscriber defaultSubscriber=new DefaultSubscriber("GOT.SUB ");
 
-        nameProducer.produce();
+        Flux.create(nameProducer)
+                .subscribe(defaultSubscriber);
+
+        //producer thread
+        Runnable r= nameProducer::produce;
+
+        IntStream.rangeClosed(0,10).forEach(i->{
+            new Thread(r).start();
+        });
+
+        defaultSubscriber.sleep(2);
+
     }
 }

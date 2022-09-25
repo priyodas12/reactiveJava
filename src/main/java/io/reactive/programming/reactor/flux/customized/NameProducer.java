@@ -19,10 +19,11 @@ public class NameProducer implements Consumer<FluxSink<String>> {
         this.fluxSink = stringFluxSink;
     }
 
-    public void produce(){
+    public void produce() {
         System.out.println("NameProducer.produce()");
         String name= Faker.instance().gameOfThrones().character();
-        this.fluxSink.next(name);
+        Thread thread=Thread.currentThread();
+        this.fluxSink.next(name+" printed by , "+thread.getName());
     }
 
 }
