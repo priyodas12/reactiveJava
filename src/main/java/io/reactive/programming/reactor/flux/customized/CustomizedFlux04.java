@@ -14,7 +14,7 @@ public class CustomizedFlux04 {
                  System.out.println("generating "+name);
                  fluxSink.next(name);
                  count++;
-               }while(count<20 && !fluxSink.isCancelled());
+               }while(count<20 && !fluxSink.isCancelled());//if not isCancelled() then keeps on emitting
            fluxSink.complete();
         }).take(3)
           .subscribe(new DefaultSubscriber("Sub 01 "));
