@@ -6,7 +6,7 @@ public class MonoSubscriber {
     public static void main(String[] args) {
         //publisher
         Mono<Integer> orders = Mono.just("order:1")
-                                  .map(word->word.length())
+                                  .map(String::length)
                                   .map(length->length/0);
 
         //orders.subscribe();
