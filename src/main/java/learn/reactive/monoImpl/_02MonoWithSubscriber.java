@@ -15,7 +15,7 @@ public class _02MonoWithSubscriber {
     /**Publishers*/
     Mono<Integer> monoOne=Mono.just(120);
 
-    //1
+    //Consumer
     monoOne.subscribe(
         i-> System.out.println("Received:: "+i),
         err-> System.out.println("Error Encountered:: "+err),
