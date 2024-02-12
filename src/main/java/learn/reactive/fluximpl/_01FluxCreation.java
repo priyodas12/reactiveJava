@@ -10,7 +10,7 @@ import java.util.List;
 import learn.reactive.util.faker.FakerUtil;
 import reactor.core.publisher.Flux;
 
-public class FluxCreation {
+public class _01FluxCreation {
 
   public static void main(String[] args) {
     Flux<Object> fluxSource= Flux.just(1L,true,"test", List.of(12,23,34));
