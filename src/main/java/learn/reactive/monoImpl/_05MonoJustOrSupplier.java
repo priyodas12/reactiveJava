@@ -6,7 +6,7 @@
 
 package learn.reactive.monoImpl;
 
-import learn.reactive.monoImpl.faker.FakerUtil;
+import learn.reactive.util.faker.FakerUtil;
 import reactor.core.publisher.Mono;
 
 public class _05MonoJustOrSupplier {

@@ -4,7 +4,7 @@
  * Copyright (c)  2014-2024 priyodas12
  */
 
-package learn.reactive.monoImpl.faker;
+package learn.reactive.util.faker;
 
 import com.github.javafaker.Faker;
 import java.util.function.Consumer;

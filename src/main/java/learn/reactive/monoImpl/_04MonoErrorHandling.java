@@ -7,7 +7,7 @@
 package learn.reactive.monoImpl;
 
 import java.util.Random;
-import learn.reactive.monoImpl.faker.FakerUtil;
+import learn.reactive.util.faker.FakerUtil;
 import reactor.core.publisher.Mono;
 
 public class _04MonoErrorHandling {
