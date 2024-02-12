@@ -10,7 +10,7 @@ import java.util.List;
 import learn.reactive.util.faker.FakerUtil;
 import reactor.core.publisher.Flux;
 
-public class FluxFromList {
+public class _02FluxFromList {
 
   public static void main(String[] args) {
 

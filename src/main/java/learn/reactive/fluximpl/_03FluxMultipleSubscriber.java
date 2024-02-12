@@ -6,10 +6,9 @@
 
 package learn.reactive.fluximpl;
 
-import learn.reactive.util.faker.FakerUtil;
 import reactor.core.publisher.Flux;
 
-public class FluxMultipleSubscriber {
+public class _03FluxMultipleSubscriber {
 
   public static void main(String[] args) {
 
