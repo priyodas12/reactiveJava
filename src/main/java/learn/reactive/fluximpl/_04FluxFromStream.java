@@ -8,6 +8,8 @@ package learn.reactive.fluximpl;
 
 import java.util.List;
 import java.util.stream.Stream;
+import learn.reactive.util.faker.FakerUtil;
+import reactor.core.publisher.Flux;
 
 public class _04FluxFromStream {
 
@@ -15,11 +17,15 @@ public class _04FluxFromStream {
 
     List<Integer> integerList= List.of(1,2,3,4,5);
 
-    Stream<Integer> stream=integerList.stream();
+    Stream<Integer> streamInteger=integerList.stream();
 
-    stream.forEach(System.out::println);
+    //streamInteger.forEach(System.out::println);
     /**Stream is for one time usage*/
     //stream.forEach(System.out::println);
+
+    Flux<Integer> integerFlux=Flux.fromStream(streamInteger);
+
+    integerFlux.subscribe(FakerUtil.onNext());
   }
 
 }
