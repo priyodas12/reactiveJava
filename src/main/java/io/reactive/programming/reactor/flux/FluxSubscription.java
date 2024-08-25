@@ -1,6 +1,6 @@
 package io.reactive.programming.reactor.flux;
 
-import io.reactive.programming.reactor.flux.utility.FluxSubscriber;
+import io.reactive.programming.reactor.flux.subscriber.FluxSubscriber;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 import reactor.core.publisher.Flux;

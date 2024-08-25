@@ -1,10 +1,6 @@
 package io.reactive.programming.reactor.flux;
 
-import com.github.javafaker.Faker;
-import io.reactive.programming.reactor.flux.utility.FluxSubscriber;
-import io.reactive.programming.reactor.mono.util.SubscriberUtility;
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
+import io.reactive.programming.reactor.flux.subscriber.FluxSubscriber;
 import reactor.core.publisher.Flux;
 
 import java.time.Duration;
@@ -12,7 +8,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class StockSubscription {

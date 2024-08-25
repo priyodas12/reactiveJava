@@ -1,4 +1,4 @@
-package io.reactive.programming.reactor.flux.utility;
+package io.reactive.programming.reactor.flux.subscriber;
 
 import com.github.javafaker.Faker;
 
