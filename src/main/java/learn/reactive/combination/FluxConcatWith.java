@@ -48,7 +48,7 @@ public class FluxConcatWith {
 
     combinedResponseAnother.subscribe (System.out::println);
 
-    Thread.sleep (Duration.ofSeconds (30));
+    Thread.sleep (100);
 
   }
 

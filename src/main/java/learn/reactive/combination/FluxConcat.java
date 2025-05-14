@@ -35,7 +35,7 @@ public class FluxConcat {
 
     combinedResponseAnother.subscribe (System.out::println);
 
-    Thread.sleep (Duration.ofSeconds (30));
+    Thread.sleep (100);
   }
 
   public List<String> getApiResponse () {

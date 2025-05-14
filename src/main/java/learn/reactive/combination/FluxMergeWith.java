@@ -35,7 +35,7 @@ public class FluxMergeWith {
 
     combinedPublisher.subscribe (System.out::println);
 
-    Thread.sleep (Duration.ofSeconds (10));
+    Thread.sleep (1000);
   }
 
   public List<String> getApiResponse () {
